@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- tailwind css and daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font-awesome cdn -->
@@ -37,8 +37,38 @@
 <body>
 
     <!-- header area start -->
-    <header class="container mx-auto px-5">
-        <h1>Hello world!</h1>
+    <header class="container mx-auto px-5 py-14">
+        <!-- banner start -->
+        <div class="carousel h-[200px] md:h-[350px] lg:h-[550px] rounded-2xl w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full h-full" />
+                <div class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row gap-5 ">
+                    <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full h-full"/>
+                <div class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                    <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full h-full"/>
+                <div class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                    <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                    <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="w-full h-full"/>
+                <div class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                    <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- header area end -->
 
