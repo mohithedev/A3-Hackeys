@@ -41,40 +41,81 @@
 <body>
 
     <!-- header area start -->
-    <header class="container mx-auto px-5 py-14">
+    <header class="container mx-auto px-5">
+        <nav class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-crimson">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl md:text-4xl font-extrabold">Hockey<span class="text-crimson">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-crimson">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-crimson text-lg md:text-xl font-bold text-white hover:text-black">Get Ticket</a>
+            </div>
+        </nav>
         <!-- banner start -->
-        <div class="carousel h-[200px] md:h-[350px] lg:h-[550px] rounded-2xl w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full h-full" />
-                <div
-                    class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row gap-5 ">
-                    <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
-                    <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+        <div class="lg:relative">
+            <div class="carousel relative h-[200px] md:h-[350px] lg:h-[550px] rounded-2xl w-full mt-12">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-full" />
+                    <div
+                        class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row gap-5 ">
+                        <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full h-full" />
+                    <div
+                        class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                        <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full h-full" />
+                    <div
+                        class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                        <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full h-full" />
+                    <div
+                        class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
+                        <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
+                    </div>
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="Images/2.png" class="w-full h-full" />
-                <div
-                    class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
-                    <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
-                    <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
-                </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="Images/3.png" class="w-full h-full" />
-                <div
-                    class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
-                    <a href="#slide2" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
-                    <a href="#slide4" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
-                </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="Images/4.png" class="w-full h-full" />
-                <div
-                    class="absolute flex md:flex-row-reverse md:bottom-1/2 md:left-0 bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:bottom-10  lg:left-20 lg:flex-row  gap-5 ">
-                    <a href="#slide3" class="btn btn-circle bg-black border-black text-white hover:text-black">❮</a>
-                    <a href="#slide1" class="btn btn-circle bg-black border-black text-white hover:text-black">❯</a>
-                </div>
+
+            <div class="p-5 lg:absolute max-w-[500px] lg:bottom-20 lg:right-16 bg-black rounded-2xl text-white">
+                <h4 class="text-lg lg:text-2xl font-extrabold mb-4">Meet all the heroes from the field</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
             </div>
         </div>
     </header>
