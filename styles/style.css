@@ -1,3 +1,32 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
 body{
     font-family: 'Manrope', sans-serif;
+}
+p{
+    color: #13131899;
+}
+.description{
+    color: #ffffffe2;
+}
+.label span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #131318;
+}
+#touch .touch_card{
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+#touch .touch_card h5{
+    font-weight: 600;
 }
