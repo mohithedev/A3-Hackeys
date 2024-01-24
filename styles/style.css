@@ -13,6 +13,7 @@ body{
 }
 p{
     color: #13131899;
+    font-weight: 500;
 }
 .description{
     color: #ffffffe2;
